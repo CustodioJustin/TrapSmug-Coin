@@ -14,7 +14,7 @@ function Mint() {
                 address: "0x336341222d362E5Fb94F54E7993b28ca5F3504fE ",
                 symbol: "TS",
                 decimals: 18,
-                image: "https://raw.githubusercontent.com/JohnPaulPabelico/Ebak-Coin/main/dapp/public/images/Ebak-Icon.png",
+                image: "https://raw.githubusercontent.com/CustodioJustin/TrapSmug-Coin/main/dapp/app/images/coin.png",
               },
             },
           });
