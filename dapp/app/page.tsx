@@ -130,6 +130,7 @@ export default function Home() {
           </div>
         </div>
       <div className="absolute bottom-0 left-0 w-full h-20 bg-black bg-opacity-50 z-10;">
+        <img src="https://github.com/CustodioJustin/TrapSmug-Coin/blob/main/dapp/app/images/github.png" alt="github" style={{ maxWidth: '100px'}}/>
       </div>
     </main>
   );
