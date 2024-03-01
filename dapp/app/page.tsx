@@ -129,9 +129,20 @@ export default function Home() {
             Current Withdrawable Balance: {currentWithBalance}
           </div>
         </div>
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-black bg-opacity-50 z-10;">
-        <img src="https://github.com/CustodioJustin/TrapSmug-Coin/blob/main/dapp/app/images/github.png" alt="github" style={{ maxWidth: '100px'}}/>
-      </div>
+        <div className="absolute bottom-0 left-0 w-full h-20 bg-black bg-opacity-50 z-10 flex justify-center items-center">
+          <div className="flex space-x-4">
+            <div>
+              <a href="https://github.com/CustodioJustin/TrapSmug-Coin" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/CustodioJustin/TrapSmug-Coin/main/dapp/app/images/github.png" alt="GitHub" style={{ maxWidth: '40px' }} />
+              </a>
+            </div>
+            <div>
+              <a href="https://arbitrum.io/" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/CustodioJustin/TrapSmug-Coin/main/dapp/app/images/arbitrum.png" alt="Arbitrum" style={{ maxWidth: '40px' }} />
+              </a>
+            </div>
+          </div>
+        </div>
     </main>
   );
 }
