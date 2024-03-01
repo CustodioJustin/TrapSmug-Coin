@@ -3,6 +3,7 @@ import { ConnectWallet } from "./handlers/Wallet";
 import Mint from "./handlers/Minting";
 import Stake from "./handlers/Staking";
 import Withdraw from "./handlers/Withdraw";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import './styles/customButton.css';
 import PopOutMenu from "./panels/Panel";
@@ -128,7 +129,8 @@ export default function Home() {
             Current Withdrawable Balance: {currentWithBalance}
           </div>
         </div>
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-black bg-opacity-50 z-10;"></div>
+      <div className="absolute bottom-0 left-0 w-full h-20 bg-black bg-opacity-50 z-10;">
+      </div>
     </main>
   );
 }
