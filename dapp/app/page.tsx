@@ -49,9 +49,20 @@ export default function Home() {
 
   // ignore error if it appears.
   const RefreshBalance = async () => {
-    setCurrentBalance(await Mint.getBalance());
-    setStakeBalance(await Stake.getStake());
-    setWithBalance(await Withdraw.getWithdrawAmount());
+    const balance = await Mint.getBalance();
+    if (balance !== undefined) {
+      setCurrentBalance(balance);
+    }
+    
+    const stake = await Stake.getStake();
+    if (stake !== undefined) {
+      setStakeBalance(stake);
+    }
+    
+    const withdrawAmount = await Withdraw.getWithdrawAmount();
+    if (withdrawAmount !== undefined) {
+      setWithBalance(withdrawAmount);
+    }
   }
 
   return (
