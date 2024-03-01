@@ -31,3 +31,35 @@ body {
     text-wrap: balance;
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar,
+.bottom-bar {
+  background-color: #000;
+  height: 50px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  color: #fff;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
