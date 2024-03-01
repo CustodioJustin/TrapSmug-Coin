@@ -58,7 +58,7 @@ const PopOutMenu: React.FC<{
         case 'Stake':
           const stakehash = await Stake.stakeCoin(parsedValue);
           if(!isNaN(stakehash)) {
-            setHiddenHash(minthash.substring(0, 7) + '*'.repeat(minthash.length - 30));
+            setHiddenHash(stakehash.substring(0, 7) + '*'.repeat(stakehash.length - 30));
             setHash(stakehash);
             setTransactionFinish(true);
           }
